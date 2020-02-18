@@ -9,7 +9,7 @@ app.use('/assets', express.static('assets'));
 // });
 
 app.get('/', function(req,res){
-  res.render('savedConnections');
+  res.render('newConnection');
 });
 
 app.listen(3000);
