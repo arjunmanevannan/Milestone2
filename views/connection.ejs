@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+		<link rel = "stylesheet" href="../assets/stylesheets/style.css" />
+		<title> Connection </title>
+	</head>
+	<body>
+	<div class = "page-content">
+	<header>
+		<%- include('partials/header'); -%>
+		<%- include('partials/site-navigation'); -%>
+	</header>
+	<main class = "itemMain">
+		<section class = "itemDesc">
+
+
+		<h2> Working with NetBeans </h2>
+			<section>
+				<p style="float: left;"><img src="../assets/images/logo_netbeans_red.png" alt = "netbeans_logo" height="100" width="100"></p>
+				<small>Hosted by: Norm <BR> Date: 21/12/2020 <BR> Place: CN Hall</small>
+			</section>
+			<BR>
+		<h4> Details </h4>
+		Apache NetBeans fits the pieces together. <BR>
+		Quickly and easily develop desktop, mobile, and web applications with Java, JavaScript, HTML5, PHP, C/C++ and more. Apache NetBeans is free and open source and is governed by the Apache Software Foundation.
+		This tutorial provides a very simple and quick introduction to the NetBeans IDE workflow by walking you through the creation of a simple "Hello World" Java console application. Once you are done with this tutorial, you will have a general knowledge of how to create and run applications in the IDE.
+		<BR> <BR>
+		This tutorial takes less than 10 minutes to complete.
+		After you finish this tutorial, you can move on to the learning trails, which are linked from the Documentation, Training & Support page.
+		</section>
+
+		<section class = "itemPoll">
+			<p id = "pollText"> Are you going? 3 people are going </p>
+			<BR>
+			<div id = "pollButtons">
+				<button class = "Yes" onclick = "location.href='savedConnections.html'" type="button"> Yes </button>
+				<button class = "No" onclick = "location.href='savedConnections.html'" type="button"> No </button>
+				<button class = "Maybe" onclick = "location.href='savedConnections.html'" type="button"> Maybe </button>
+			</div>
+		</section>
+
+	</main>
+	<%- include('partials/circle-theme'); -%>
+	</div>
+	<%- include('partials/footer'); -%>
+</body>
+</html>
