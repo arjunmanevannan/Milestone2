@@ -6,22 +6,6 @@ class Connection {
       this.details = details;
       this.date = date;
     }
-
-    // getCourseID(){
-    //   return ${this.courseID};
-    // }
-    //
-    // getTitle(){
-    //   return ${this.title};
-    // }
-    //
-    // getTerm(){
-    //   return ${this.term};
-    // }
-    //
-    // getInstructor(){
-    //   return ${this.instructor};
-    // }
 }
 
 module.exports = Connection;
