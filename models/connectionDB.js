@@ -14,7 +14,12 @@ var getConnections = function(){
   return connections;
 }
 
-
+var addConnection = function(connection){
+  console.log("REACHED");
+  console.log(connections.length);
+  connections.push(connection);
+  console.log(connections.length);
+}
 var getConnection = function (givenConnectionID){
   for(var i=0;i<connections.length;i++){
     if(connections[i].connectionID == givenConnectionID){
@@ -26,5 +31,6 @@ var getConnection = function (givenConnectionID){
 }
 
 
+module.exports.addConnection = addConnection;
 module.exports.getConnection = getConnection;
 module.exports.getConnections = getConnections;

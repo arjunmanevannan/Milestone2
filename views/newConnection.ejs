@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
 		<link rel = "stylesheet" href="../assets/stylesheets/style.css" />
-		<title> Homepage </title>
+		<title> New Connection </title>
 	</head>
 
 	<body>
@@ -14,33 +14,18 @@
 	<%- include('partials/header'); -%>
 	<%- include('partials/site-navigation'); -%>
 	</header>
+  <h1>Host your talk here!</h1>
 
-	<main>
-    <h1>Form Demo</h1>
-    <form>
-      <fieldset>
-        <legend>Text input</legend>
-        <p>
-          <label>Topic</label>
-          <input type = "text" id = "topic" value = "text here" />
-        </p>
-        <p>
-          <label>  Name </label>
-          <input type = "text" id = "name" />
-        </p>
-        <p>
-          <label>  Details </label>
-          <<textarea id = "details" rows="3" cols="80"> </textarea>
-        </p>
+	<form action = "/" method="post">
+		<input type="text" name="connection[name]">
+		<input type="text" name="connection[host]">
+		<input type="text" name="connection[topic]">
+		<input type="text" name="connection[details]">
+		<input type="text" name="connection[date]">
+		<input type="text" name="connection[time]">
+		<button type="submit">Submit</button>
+	</form>
 
-        <p>
-          <label> Where </label>
-          <input type = "text" id = "location" value = "location" />
-        </p>
-
-      </fieldset>
-    </form>
-	</main>
 
 	<%- include('partials/circle-theme'); -%>
 

@@ -5,9 +5,6 @@ app.set('view engine', 'ejs');
 app.use('/assets', express.static('assets'));
 var details = require('./routes/controller.js')
 app.use('/', details);
-// app.get('/', function(req,res){
-//   res.render('index');
-// });
 
 app.get('/', function(req,res){
   res.render('index');
@@ -17,13 +14,17 @@ app.get('/savedConnections', function(req,res){
   res.render('savedConnections');
 });
 
+// 
+// app.get('/connections', function(req,res){
+//   res.render('connections');
+// });
 
-app.get('/connections', function(req,res){
-  res.render('connections');
+app.get('/about', function(req,res){
+  res.render('about');
 });
 
-// app.get('/connection', function(req,res){
-//   res.render('connection');
-// });
+app.get('/contact', function(req,res){
+  res.render('contact');
+});
 
 app.listen(3000);
