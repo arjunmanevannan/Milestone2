@@ -15,11 +15,9 @@ var getConnections = function(){
 }
 
 var addConnection = function(connection){
-  console.log("REACHED");
-  console.log(connections.length);
   connections.push(connection);
-  console.log(connections.length);
 }
+
 var getConnection = function (givenConnectionID){
   for(var i=0;i<connections.length;i++){
     if(connections[i].connectionID == givenConnectionID){
