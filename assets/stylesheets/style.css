@@ -81,7 +81,7 @@ main{
 }
 .catalogMain{
 	width: 80%;
-	height:600px;		
+	height:600px;
 }
 
 .itemMain{
@@ -95,7 +95,7 @@ main{
 	display:flex;
 	flex:6;
 	align-items: center;
-	
+
 }
 .logo,.caption {
 	background: linear-gradient(to right, #494964, #6f6f89);
@@ -105,6 +105,14 @@ main{
 
 .user-specific-nav{
 	flex:3;
+}
+
+.form{
+	display: inline-block;
+	padding-left: 700px;
+
+	align-content: center;
+
 }
 
 
@@ -166,7 +174,7 @@ main{
 	display:flex;
 	justify-content:space-around;
 	list-style:none;
-	flex:1;	
+	flex:1;
 }
 
 
@@ -204,7 +212,7 @@ main{
 	//display:flex;
 	width: 80%;
 	height:600px;
-	//background-color:blue;		
+	//background-color:blue;
 }
 
 table{
@@ -248,5 +256,5 @@ td{
 }
 
 #pollButtons{
-	padding: 0 0 0 45px; 
+	padding: 0 0 0 45px;
 }

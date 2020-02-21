@@ -14,8 +14,8 @@
 	<%- include('partials/header'); -%>
 	<%- include('partials/site-navigation'); -%>
 	</header>
-	<div>
-  	<h1>Host your talk here!</h1>
+	<div class = "form">
+  	<h1>Host your talk with us! Sign up here!!</h1>
 
 		<form action = "/" method="post">
 			<label for="connection[name]"> Talk Name: </label><br>
@@ -30,11 +30,9 @@
 				<option value="Introduction to JAVA">Introduction to JAVA</option>
 				<option value="Career">Career</option>
 			</select>
-			
+			<BR><BR>
 			<label for="connection[details]"> Additional Details: </label><br>
-			<textarea name="connection[details]" rows="10" cols="30">
-				Please enter additional details here.
-			</textarea>
+			<textarea name="connection[details]" rows="10" cols="50">Please enter additional details here</textarea> <BR><BR>
 
 			<label for="connection[date]"> Date: </label><br>
 			<input type="text" name="connection[date]"><br><br>
