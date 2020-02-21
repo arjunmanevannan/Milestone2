@@ -17,19 +17,14 @@
 		<section class = "itemDesc">
 
 
-		<h2> Working with NetBeans </h2>
+		<h2> <%= obj.name %> </h2>
 			<section>
 				<p style="float: left;"><img src="../assets/images/logo_netbeans_red.png" alt = "netbeans_logo" height="100" width="100"></p>
-				<small>Hosted by: Norm <BR> Date: 21/12/2020 <BR> Place: CN Hall</small>
+				<small>Hosted by: <%= obj.host %> <BR> Date: <%= obj.date %> <BR> Time: <%= obj.time %></small>
 			</section>
 			<BR>
 		<h4> Details </h4>
-		Apache NetBeans fits the pieces together. <BR>
-		Quickly and easily develop desktop, mobile, and web applications with Java, JavaScript, HTML5, PHP, C/C++ and more. Apache NetBeans is free and open source and is governed by the Apache Software Foundation.
-		This tutorial provides a very simple and quick introduction to the NetBeans IDE workflow by walking you through the creation of a simple "Hello World" Java console application. Once you are done with this tutorial, you will have a general knowledge of how to create and run applications in the IDE.
-		<BR> <BR>
-		This tutorial takes less than 10 minutes to complete.
-		After you finish this tutorial, you can move on to the learning trails, which are linked from the Documentation, Training & Support page.
+		<%= obj.details %>
 		</section>
 
 		<section class = "itemPoll">

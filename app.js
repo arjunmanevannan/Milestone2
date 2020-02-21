@@ -3,7 +3,8 @@ var app = express();
 
 app.set('view engine', 'ejs');
 app.use('/assets', express.static('assets'));
-
+var details = require('./routes/controller.js')
+app.use('/', details);
 // app.get('/', function(req,res){
 //   res.render('index');
 // });
@@ -21,8 +22,8 @@ app.get('/connections', function(req,res){
   res.render('connections');
 });
 
-app.get('/connection', function(req,res){
-  res.render('connection');
-});
+// app.get('/connection', function(req,res){
+//   res.render('connection');
+// });
 
 app.listen(3000);
