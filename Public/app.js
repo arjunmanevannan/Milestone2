@@ -14,11 +14,6 @@ app.get('/savedConnections', function(req,res){
   res.render('savedConnections');
 });
 
-// 
-// app.get('/connections', function(req,res){
-//   res.render('connections');
-// });
-
 app.get('/about', function(req,res){
   res.render('about');
 });
